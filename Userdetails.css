@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+select, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #6c757d;
+    color: white;
+}
+
+button {
+    background-color: #3128a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    table, th, td {
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    select, input, button {
+        width: 100%;
+    }
+
+    .modal {
+        width: 90%;
+    }
+}

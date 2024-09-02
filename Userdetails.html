@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="Userdetails.css">
+</head>
+<body>
+    <h1>User Management</h1>
+    <label>Filter by City:</label>
+    <select id="cityFilter">
+        <option value="">Select a City</option>
+    </select>
+
+    <button id="addUserBtn">+ Add User</button>
+    <div  class="modal" style="display: none;">
+        <span class="close">&times;</span>
+        <h2 id="formTitle">Add User</h2>
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" placeholder="Enter name">
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" placeholder="Enter email">
+        <label for="userAddress">Address:</label>
+        <input type="text" id="userAddress" placeholder="Enter address">
+        <label for="userCity">City:</label>
+        <input type="text" id="userCity" placeholder="Enter city">
+        <button id="saveUserBtn">Save</button>
+    </div>
+
+    
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <script src="Userdetails.js"></script>
+</body>
+</html>
